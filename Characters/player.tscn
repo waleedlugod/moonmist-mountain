@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://y5h4sdtd2f04"]
+
+[ext_resource type="Texture2D" uid="uid://j3rcku5p8pq4" path="res://Assets/characters/main character/walk and idle.png" id="1_kktqm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b23ba"]
+size = Vector2(8, 8)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, -4)
+scale = Vector2(0.333333, 0.333333)
+texture = ExtResource("1_kktqm")
+hframes = 8
+vframes = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, -4)
+shape = SubResource("RectangleShape2D_b23ba")
