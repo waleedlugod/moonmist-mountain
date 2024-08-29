@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://y5h4sdtd2f04"]
+[gd_scene load_steps=4 format=3 uid="uid://y5h4sdtd2f04"]
 
 [ext_resource type="Texture2D" uid="uid://j3rcku5p8pq4" path="res://Assets/characters/main character/walk and idle.png" id="1_kktqm"]
+[ext_resource type="Script" path="res://Characters/player.gd" id="1_v3ki5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b23ba"]
 size = Vector2(8, 8)
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_v3ki5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(4, -4)
