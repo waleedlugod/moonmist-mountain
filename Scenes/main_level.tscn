@@ -319,6 +319,7 @@ y_sort_enabled = true
 [node name="Player" parent="." instance=ExtResource("1_l1u7e")]
 z_index = 1
 y_sort_enabled = true
+position = Vector2(8, -8)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
