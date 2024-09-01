@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh85yrbbqne28"
-path="res://.godot/imported/inside.png-bfb090620996a50700913027040f8f88.ctex"
+uid="uid://lty8hg0vdt2c"
+path="res://.godot/imported/Dungeon_Autotiles.png-165460b6223117e877080c9c7b7041ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tilemaps/inside.png"
-dest_files=["res://.godot/imported/inside.png-bfb090620996a50700913027040f8f88.ctex"]
+source_file="res://Assets/Tiles/Dungeon_Autotiles.png"
+dest_files=["res://.godot/imported/Dungeon_Autotiles.png-165460b6223117e877080c9c7b7041ab.ctex"]
 
 [params]
 

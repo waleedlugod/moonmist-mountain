@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk7kxsknbbt0d"
-path="res://.godot/imported/summer tilemap.png-5ad173c9f0d871b77dcaa67eb12c73ac.ctex"
+uid="uid://ba3ws52ox1dlx"
+path="res://.godot/imported/Dungeon_HeroMan1.png-ecc7cfd1399fedbc478f82cff1b7fb7c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tilemaps/summer tilemap.png"
-dest_files=["res://.godot/imported/summer tilemap.png-5ad173c9f0d871b77dcaa67eb12c73ac.ctex"]
+source_file="res://Assets/Animations/Dungeon_HeroMan1.png"
+dest_files=["res://.godot/imported/Dungeon_HeroMan1.png-ecc7cfd1399fedbc478f82cff1b7fb7c.ctex"]
 
 [params]
 

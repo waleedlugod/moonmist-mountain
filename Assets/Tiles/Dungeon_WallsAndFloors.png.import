@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3cjy82e2hkpu"
-path="res://.godot/imported/autumn items.png-3a02f711b7039b9e56a669e0ff150889.ctex"
+uid="uid://6qy37y5qwsrb"
+path="res://.godot/imported/Dungeon_WallsAndFloors.png-e1908294c0f2cf72a6c690ca633894ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items&objects/autumn items.png"
-dest_files=["res://.godot/imported/autumn items.png-3a02f711b7039b9e56a669e0ff150889.ctex"]
+source_file="res://Assets/Tiles/Dungeon_WallsAndFloors.png"
+dest_files=["res://.godot/imported/Dungeon_WallsAndFloors.png-e1908294c0f2cf72a6c690ca633894ff.ctex"]
 
 [params]
 

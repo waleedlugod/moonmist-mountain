@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3i8tnunr57fp"
-path="res://.godot/imported/spring tilemap.png-70d88be14f89636d38cf4b064b487edd.ctex"
+uid="uid://bmkb7o8cb8dyb"
+path="res://.godot/imported/Dungeon_Minecart.png-85f044b5fcc8b8c526dce82040800906.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tilemaps/spring tilemap.png"
-dest_files=["res://.godot/imported/spring tilemap.png-70d88be14f89636d38cf4b064b487edd.ctex"]
+source_file="res://Assets/Animations/Dungeon_Minecart.png"
+dest_files=["res://.godot/imported/Dungeon_Minecart.png-85f044b5fcc8b8c526dce82040800906.ctex"]
 
 [params]
 

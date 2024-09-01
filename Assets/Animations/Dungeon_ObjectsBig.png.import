@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cepkmstrm8mha"
-path="res://.godot/imported/winter outside.png-1ae531ea3836182a5444f0fead056463.ctex"
+uid="uid://cidesni5evroj"
+path="res://.godot/imported/Dungeon_ObjectsBig.png-f278fdbf31fcbd897615084a1cdf3e44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tilemaps/winter outside.png"
-dest_files=["res://.godot/imported/winter outside.png-1ae531ea3836182a5444f0fead056463.ctex"]
+source_file="res://Assets/Animations/Dungeon_ObjectsBig.png"
+dest_files=["res://.godot/imported/Dungeon_ObjectsBig.png-f278fdbf31fcbd897615084a1cdf3e44.ctex"]
 
 [params]
 

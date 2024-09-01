@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1dkyi3bearoh"
-path="res://.godot/imported/furniture.png-2e712260422b659ebcf293c1ff82441f.ctex"
+uid="uid://blyhs657dep6g"
+path="res://.godot/imported/DungeonDecorations.png-8e767fd66aa446076688bac222cbd0f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items&objects/furniture.png"
-dest_files=["res://.godot/imported/furniture.png-2e712260422b659ebcf293c1ff82441f.ctex"]
+source_file="res://Assets/Tiles/DungeonDecorations.png"
+dest_files=["res://.godot/imported/DungeonDecorations.png-8e767fd66aa446076688bac222cbd0f0.ctex"]
 
 [params]
 

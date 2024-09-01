@@ -43,7 +43,7 @@ func attempt_move(direction: Vector2) -> void:
 			"StaticWalls":
 				is_walkable = false
 				is_sliding = false
-			"Ice":
+			"Background":
 				is_walkable = true
 				is_sliding = true
 

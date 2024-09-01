@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnp1m3p5wqc31"
-path="res://.godot/imported/autumn tilemap.png-0d23caeb09ad502c1183ebafdb9ecaaa.ctex"
+uid="uid://wmsuvirqa8h2"
+path="res://.godot/imported/Dungeon_ObjectsDoorUp.png-b8bd925ee9355ab93d96f2ec8f579458.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tilemaps/autumn tilemap.png"
-dest_files=["res://.godot/imported/autumn tilemap.png-0d23caeb09ad502c1183ebafdb9ecaaa.ctex"]
+source_file="res://Assets/Animations/Dungeon_ObjectsDoorUp.png"
+dest_files=["res://.godot/imported/Dungeon_ObjectsDoorUp.png-b8bd925ee9355ab93d96f2ec8f579458.ctex"]
 
 [params]
 
