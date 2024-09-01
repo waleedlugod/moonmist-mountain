@@ -1,13 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://y5h4sdtd2f04"]
 
-[ext_resource type="Texture2D" uid="uid://j3rcku5p8pq4" path="res://Assets/characters/main character/walk and idle.png" id="1_kktqm"]
 [ext_resource type="Script" path="res://Characters/player.gd" id="1_v3ki5"]
+[ext_resource type="Texture2D" uid="uid://cr1hipfg4wi5q" path="res://Assets/character/Front animations/spr_player_front_idle.png" id="2_37pmm"]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_v3ki5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -4)
-texture = ExtResource("1_kktqm")
+texture = ExtResource("2_37pmm")
 hframes = 8
 vframes = 3
+
+[node name="SprPlayerFrontIdle" type="Sprite2D" parent="."]
+position = Vector2(0, -7)
+texture = ExtResource("2_37pmm")
+hframes = 12

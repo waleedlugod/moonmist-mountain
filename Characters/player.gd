@@ -19,12 +19,14 @@ func _physics_process(_delta: float) -> void:
 		# Face target direction
 		facing = direction
 
-		# Query the target position if it is walkable
+		# Get the interactable objects at the target position
 		var space_state = get_world_2d().direct_space_state
 		var query_target = PhysicsPointQueryParameters2D.new()
 		query_target.position = global_position + direction * TILE_SIZE
 		var collisions = space_state.intersect_point(query_target)
 
+		# Determine if player will slide, be blocked by wall, or can freely
+		# move
 		var is_can_move = true
 		is_sliding = false
 		for collision in collisions:

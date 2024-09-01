@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmf5iij487gva"
-path="res://.godot/imported/cat kigurumi walk and idle.png-891ac3a615cf13a1a1e676dd8c2af137.ctex"
+uid="uid://byihshfbpbnft"
+path="res://.godot/imported/spr_player_right_walk.png-aef0d5621bf16ab81c2a9dca85fd75aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/main character/cat kigurumi walk and idle.png"
-dest_files=["res://.godot/imported/cat kigurumi walk and idle.png-891ac3a615cf13a1a1e676dd8c2af137.ctex"]
+source_file="res://Assets/character/Side animations/spr_player_right_walk.png"
+dest_files=["res://.godot/imported/spr_player_right_walk.png-aef0d5621bf16ab81c2a9dca85fd75aa.ctex"]
 
 [params]
 

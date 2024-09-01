@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sa0p6c67rjn5"
-path="res://.godot/imported/portrait male.png-00905b4e1d436592a237dac1638b1ac6.ctex"
+uid="uid://b1unlih05x8iv"
+path="res://.godot/imported/spr_player_right_idle.png-ce48c7b46577bc01d4e6f4d0d7be37f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/main character/portrait male.png"
-dest_files=["res://.godot/imported/portrait male.png-00905b4e1d436592a237dac1638b1ac6.ctex"]
+source_file="res://Assets/character/Side animations/spr_player_right_idle.png"
+dest_files=["res://.godot/imported/spr_player_right_idle.png-ce48c7b46577bc01d4e6f4d0d7be37f7.ctex"]
 
 [params]
 

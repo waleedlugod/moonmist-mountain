@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdylx2qrn0pjq"
-path="res://.godot/imported/attack and die.png-fcd319115a5de6430e70b80dfe11f45f.ctex"
+uid="uid://cr1hipfg4wi5q"
+path="res://.godot/imported/spr_player_front_idle.png-a22564a07e71c7c169c0607540f7ca09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/main character/attack and die.png"
-dest_files=["res://.godot/imported/attack and die.png-fcd319115a5de6430e70b80dfe11f45f.ctex"]
+source_file="res://Assets/character/Front animations/spr_player_front_idle.png"
+dest_files=["res://.godot/imported/spr_player_front_idle.png-a22564a07e71c7c169c0607540f7ca09.ctex"]
 
 [params]
 

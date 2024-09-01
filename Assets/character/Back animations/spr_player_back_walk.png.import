@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bm23pfeu6i3ex"
-path="res://.godot/imported/portrait cat kigurumi.png-d8070e3b1346e853afc9951b3e848d8b.ctex"
+uid="uid://cnci55lk6div1"
+path="res://.godot/imported/spr_player_back_walk.png-de4f8665552cb3a1e73255567774350a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characters/main character/portrait cat kigurumi.png"
-dest_files=["res://.godot/imported/portrait cat kigurumi.png-d8070e3b1346e853afc9951b3e848d8b.ctex"]
+source_file="res://Assets/character/Back animations/spr_player_back_walk.png"
+dest_files=["res://.godot/imported/spr_player_back_walk.png-de4f8665552cb3a1e73255567774350a.ctex"]
 
 [params]
 
