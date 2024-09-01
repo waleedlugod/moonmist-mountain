@@ -14,14 +14,13 @@ func _physics_process(_delta: float) -> void:
 	var direction = Input.get_vector("left", "right", "up", "down")
 	if is_sliding: direction = facing
 
-	# Attempt to move in direction if not currently moving and direction
-	# is in cardinal directions
+	# If not currently moving
 	if not is_moving:
-		if direction != Vector2.ZERO \
-		and (direction.x == 0 || direction.y == 0):
+		# If move direction is not idle and not diagonal
+		if direction != Vector2.ZERO and (direction.x == 0 || direction.y == 0):
 			attempt_move(direction)
-		else:
-			animated_sprite.play("%s_idle" % facing_to_string())
+		# Play idle animation
+		else: animated_sprite.play("%s_idle" % facing_to_string())
 
 # Determine behavior of movement attempt
 func attempt_move(direction: Vector2) -> void:
@@ -35,19 +34,21 @@ func attempt_move(direction: Vector2) -> void:
 	var collisions = space_state.intersect_point(query_target)
 
 	# Determine if player will slide, be blocked by wall, or can freely move
-	# Initial behavior set for free movement
+	# Initial behavior (free movement)
 	var is_walkable = true
 	is_sliding = false
 	for collision in collisions:
 		match collision["collider"].name:
-			"StaticWalls":
+			"Walls":
 				is_walkable = false
 				is_sliding = false
+			# Wet ground (sliding)
 			"Background":
 				is_walkable = true
 				is_sliding = true
 
 	if is_walkable: move(query_target.position)
+	else: animated_sprite.play("%s_idle" % facing_to_string())
 
 # Move player to target position
 func move(target_position: Vector2) -> void:
