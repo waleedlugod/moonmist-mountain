@@ -29,9 +29,18 @@ func attempt_move(direction: Vector2) -> void:
 
 	# Get the colliding objects at the target position
 	var space_state = get_world_2d().direct_space_state
-	var query_target = PhysicsPointQueryParameters2D.new()
-	query_target.position = global_position + direction * TILE_SIZE
-	var collisions = space_state.intersect_point(query_target)
+	var global_target_position = global_position + direction * TILE_SIZE
+	var query = PhysicsRayQueryParameters2D.create(global_position, global_target_position)
+
+	var collisions = []
+	var collisions_exceptions = []
+	while true:
+		var collision = space_state.intersect_ray(query)
+		if not collision: break
+		collisions.append(collision)
+		collisions_exceptions.append(collision["rid"])
+		query.set_exclude(collisions_exceptions)
+
 
 	# Determine if player will slide, be blocked by wall, or can freely move
 	# Initial behavior (free movement)
@@ -47,19 +56,19 @@ func attempt_move(direction: Vector2) -> void:
 				is_walkable = true
 				is_sliding = true
 
-	if is_walkable: move(query_target.position)
+	if is_walkable: move(global_target_position)
 	else: animated_sprite.play("%s_idle" % facing_to_string())
 
 # Move player to target position
-func move(target_position: Vector2) -> void:
+func move(global_target_position: Vector2) -> void:
 	is_moving = true
 
 	# Tween to new position
 	var move_tween = create_tween()
 	move_tween.tween_property(
 		self,
-		"position",
-		target_position,
+		"global_position",
+		global_target_position,
 		SPEED
 		).set_trans(Tween.TRANS_LINEAR)
 	move_tween.tween_callback(func(): is_moving = false)
