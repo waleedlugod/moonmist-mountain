@@ -39,7 +39,7 @@ func attempt_move(direction: Vector2) -> void:
 	is_sliding = false
 	for collision in collisions:
 		match collision["collider"].name:
-			"Walls":
+			"Objects":
 				is_walkable = false
 				is_sliding = false
 			# Wet ground (sliding)
@@ -76,4 +76,4 @@ func facing_to_string() -> String:
 		Vector2.DOWN: return "down"
 		Vector2.LEFT: return "left"
 		Vector2.RIGHT: return "right"
-		_: return ""
+		_: return "down"

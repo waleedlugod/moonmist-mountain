@@ -563,5 +563,5 @@ script = ExtResource("1_v3ki5")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_eg7k8")
-animation = &"right_walk"
+animation = &"down_idle"
 autoplay = "down_idle"
