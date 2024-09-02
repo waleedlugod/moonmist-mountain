@@ -29,7 +29,7 @@ func attempt_move(direction: Vector2) -> void:
 
 	# Create ray cast at target position
 	var space_state = get_world_2d().direct_space_state
-	var global_target_position = global_position + direction * TILE_SIZE
+	var global_target_position = global_position + facing * TILE_SIZE
 	var query = PhysicsRayQueryParameters2D.create(
 		global_position, global_target_position
 		)
@@ -57,9 +57,9 @@ func attempt_move(direction: Vector2) -> void:
 			"Objects":
 				is_walkable = false
 				is_sliding = false
+				break
 			# Wet ground (sliding)
-			"Background":
-				is_walkable = true
+			"Background" when collision.position != global_position:
 				is_sliding = true
 			"Plants":
 				speed = 0.8
