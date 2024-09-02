@@ -1,6 +1,6 @@
-[gd_scene load_steps=83 format=3 uid="uid://y5h4sdtd2f04"]
+[gd_scene load_steps=84 format=3 uid="uid://y5h4sdtd2f04"]
 
-[ext_resource type="Script" path="res://Characters/player.gd" id="1_v3ki5"]
+[ext_resource type="Script" path="res://Characters/Player/player.gd" id="1_v3ki5"]
 [ext_resource type="Texture2D" uid="uid://cr1hipfg4wi5q" path="res://Assets/character/Front animations/spr_player_front_idle.png" id="2_37pmm"]
 [ext_resource type="Texture2D" uid="uid://bpiiqjr1fh0w5" path="res://Assets/character/Front animations/spr_player_front_walk.png" id="3_tc347"]
 [ext_resource type="Texture2D" uid="uid://bjsd8ntttbjfj" path="res://Assets/character/Back animations/spr_player_back_idle.png" id="4_8su20"]
@@ -557,6 +557,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qxcjp"]
+size = Vector2(16, 16)
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_v3ki5")
 
@@ -565,3 +568,6 @@ position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_eg7k8")
 animation = &"down_idle"
 autoplay = "down_idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qxcjp")

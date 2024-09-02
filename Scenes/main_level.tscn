@@ -1,11 +1,12 @@
-[gd_scene load_steps=15 format=4 uid="uid://ces7dr0ftpcit"]
+[gd_scene load_steps=16 format=4 uid="uid://ces7dr0ftpcit"]
 
-[ext_resource type="PackedScene" uid="uid://y5h4sdtd2f04" path="res://Characters/player.tscn" id="1_l1u7e"]
+[ext_resource type="PackedScene" uid="uid://y5h4sdtd2f04" path="res://Characters/Player/player.tscn" id="1_l1u7e"]
 [ext_resource type="Texture2D" uid="uid://lty8hg0vdt2c" path="res://Assets/Tiles/Dungeon_Autotiles.png" id="2_iced0"]
 [ext_resource type="Texture2D" uid="uid://6qy37y5qwsrb" path="res://Assets/Tiles/Dungeon_WallsAndFloors.png" id="3_rb7d2"]
 [ext_resource type="Texture2D" uid="uid://blyhs657dep6g" path="res://Assets/Tiles/DungeonDecorations.png" id="4_ap77n"]
 [ext_resource type="Texture2D" uid="uid://btiupokllt32w" path="res://Assets/Tiles/Dungeon_WaterAnimation.png" id="5_2381s"]
 [ext_resource type="Texture2D" uid="uid://bhp3dpd1jnqn" path="res://Assets/Animations/Dungeon_ObjectsDungeon.png" id="5_w2387"]
+[ext_resource type="PackedScene" uid="uid://dsgb6ygivi2uo" path="res://Characters/Slime/slime.tscn" id="7_7q56s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ywahc"]
 texture = ExtResource("2_iced0")
@@ -1065,3 +1066,7 @@ z_index = 1
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AAADAP//BAAbAAQAAAADAAAABAAaAAQAAAADAAEABAAYAAQAAAADAAMABAAYAAQAAAADAAQABAAYAAQAAAADAAUABAAaAAQAAAADAAYABAAZAAMAAAAEAP//BAAbAAQAAAAEAAAABAAWAAQAAAAEAAEABAAZAAMAAAAEAAUABAAaAAQAAAAEAAcABAAWAAQAAAAEAAgABAAbAAQAAAAFAAAABAAWAAQAAAAFAAMABAAZAAMAAAAFAAgABAAYAAQAAAAGAAIABAAbAAQAAAAGAAcABAAaAAQAAAAHAAAABAAWAAQAAAAHAAgABAAWAAQAAAAIAAAABAAZAAMAAAAIAAEABAAYAAQAAAAIAAQABAAbAAQAAAAIAAYABAAaAAQAAAAIAAcABAAaAAQAAAAJAAAABAAWAAQAAAAJAAcABAAWAAQAAAAJAAgABAAbAAQAAAAKAAAABAAYAAQAAAAKAAEABAAWAAQAAAAKAAcABAAWAAQAAAAKAAgABAAaAAQAAAALAP//BAAZAAMAAAALAAAABAAbAAQAAAALAAEABAAaAAQAAAALAAUABAAWAAQAAAALAAcABAAWAAQAAAAMAAAABAAWAAQAAAAMAAIABAAWAAQAAAAMAAMABAAbAAQAAAAMAAQABAAZAAMAAAANAAEABAAbAAQAAAANAAIABAAZAAMAAAANAAYABAAZAAMAAAANAAcABAAZAAMAAAAOAAEABAAYAAQAAAAOAAQABAAaAAQAAAAOAAcABAAYAAQAAAAOAAgABAAZAAMAAAA=")
 tile_set = SubResource("TileSet_bsmof")
+
+[node name="Slime" parent="." instance=ExtResource("7_7q56s")]
+z_index = 1
+position = Vector2(-24, -8)

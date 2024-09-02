@@ -41,7 +41,7 @@ func attempt_move(direction: Vector2) -> void:
 	while true:
 		var collision = space_state.intersect_ray(query)
 		if not collision: break
-		collisions.append(collision)
+		if collision["collider"].name != name: collisions.append(collision)
 		collisions_exceptions.append(collision["rid"])
 		query.set_exclude(collisions_exceptions)
 
@@ -54,7 +54,7 @@ func attempt_move(direction: Vector2) -> void:
 	animated_sprite.set_speed_scale(1)
 	for collision in collisions:
 		match collision["collider"].name:
-			"Objects":
+			"Objects", "Slime", "Player":
 				is_walkable = false
 				is_sliding = false
 				break
