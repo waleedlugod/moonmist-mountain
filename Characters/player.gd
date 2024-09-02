@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var animated_sprite = $AnimatedSprite2D
 
 const TILE_SIZE = 16
-const SPEED = 0.2
+var speed = 0.2
 var is_moving = false
 var is_sliding = false
 var facing = Vector2()
@@ -27,11 +27,15 @@ func attempt_move(direction: Vector2) -> void:
 	# Face target direction
 	facing = direction
 
-	# Get the colliding objects at the target position
+	# Create ray cast at target position
 	var space_state = get_world_2d().direct_space_state
 	var global_target_position = global_position + direction * TILE_SIZE
-	var query = PhysicsRayQueryParameters2D.create(global_position, global_target_position)
+	var query = PhysicsRayQueryParameters2D.create(
+		global_position, global_target_position
+		)
+	query.set_hit_from_inside(true)
 
+	# Get all colliding objects at target position
 	var collisions = []
 	var collisions_exceptions = []
 	while true:
@@ -46,6 +50,8 @@ func attempt_move(direction: Vector2) -> void:
 	# Initial behavior (free movement)
 	var is_walkable = true
 	is_sliding = false
+	speed = 0.2
+	animated_sprite.set_speed_scale(1)
 	for collision in collisions:
 		match collision["collider"].name:
 			"Objects":
@@ -55,6 +61,10 @@ func attempt_move(direction: Vector2) -> void:
 			"Background":
 				is_walkable = true
 				is_sliding = true
+			"Plants":
+				speed = 0.8
+				animated_sprite.set_speed_scale(0.5)
+
 
 	if is_walkable: move(global_target_position)
 	else: animated_sprite.play("%s_idle" % facing_to_string())
@@ -69,7 +79,7 @@ func move(global_target_position: Vector2) -> void:
 		self,
 		"global_position",
 		global_target_position,
-		SPEED
+		speed,
 		).set_trans(Tween.TRANS_LINEAR)
 	move_tween.tween_callback(func(): is_moving = false)
 
