@@ -1,8 +1,6 @@
 extends "res://Characters/Player/player.gd"
 
 
-@onready var timer = $Timer
-
 const DIRECTIONS = [Vector2.UP, Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT]
 var direction = Vector2.ZERO
 
